@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <h1>URL Shortener</h1>
+      <h3>
+        <form action="/url" method="POST">
+          <input
+            style="
+              height: 40px;
+              width: 400px;
+              border-radius: 10px;
+              font-size: 20px;
+            "
+            type="url"
+            placeholder="Enter URL"
+            name="url"
+            id="url"
+          />
+          <br />
+          <br />
+          <button
+            style="
+              height: 50px;
+              width: 150px;
+              background-color: green;
+              border-radius: 10px;
+              font-size: 20px;
+              color: white;
+            "
+          >
+            Shotern Link
+          </button>
+        </form>
+      </h3>
+      <% if(shorturl) { %>
+      <h2>Your Shortened URL : <%=shorturl%></h2>
+
+      <% } %>
+    </center>
+  </body>
+</html>
